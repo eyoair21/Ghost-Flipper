@@ -6,6 +6,10 @@
 
 This software is for educational purposes only and is not intended to be used for any illegal activity. <br> We do not condone illegal activity and strongly encourage keeping transmissions limited to frequencies and protocols allowed by regional law. <br> This software is made without support from Flipper Devices and is in no way associated with the official Flipper project. 
 
+# Installation
+
+Install bundles can be downloaded from the [releases](https://github.com/TensorHex/Ghost-Flipper/releases) page. These can be installed with qFlipper. **If this is your first time installing Ghost Flipper, you must update to the latest version of the official firmware before installing Ghost Flipper.**
+
 # Development
 
 Flipper Zero Firmware is written in C, with some bits and pieces written in C++ and armv7m assembly languages. An intermediate level of C knowledge is recommended for comfortable programming. C, C++, and armv7m assembly languages are supported for Flipper applications.
