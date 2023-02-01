@@ -62,7 +62,6 @@ static DialogMessageButton unleashed_info_screen(DialogsApp* dialogs, DialogMess
     const char* screen_header = "Ghost Firmware\n";
 
     const char* screen_text = "Proceed with caution.\n"
-                              "TX/RX Unrestricted.\n"
                               "For educational use only";
 
     dialog_message_set_header(message, screen_header, 0, 0, AlignLeft, AlignTop);
@@ -77,7 +76,8 @@ static DialogMessageButton unleashed_info_screen(DialogsApp* dialogs, DialogMess
 static DialogMessageButton unleashed_info_screen2(DialogsApp* dialogs, DialogMessage* message) {
     DialogMessageButton result;
 
-    const char* screen_text = "For updates & info visit\n"
+    const char* screen_text = "TX/RX Unrestricted\n"
+                              "For updates & info visit\n"
                               "github.com/TensorHex";
 
     dialog_message_set_text(message, screen_text, 0, 0, AlignLeft, AlignTop);
@@ -122,7 +122,7 @@ static DialogMessageButton hw_version_screen(DialogsApp* dialogs, DialogMessage*
         furi_hal_version_get_hw_connect(),
         furi_hal_version_get_hw_region_name_otp(),
         furi_hal_region_get_name(),
-        my_name ? my_name : "ghost-010");
+        my_name ? my_name : "Unknown");
 
     furi_string_cat_printf(buffer, "Serial Number:\n");
     const uint8_t* uid = furi_hal_version_uid();
