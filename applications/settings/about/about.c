@@ -59,10 +59,11 @@ static DialogMessageButton compliance_screen(DialogsApp* dialogs, DialogMessage*
 static DialogMessageButton unleashed_info_screen(DialogsApp* dialogs, DialogMessage* message) {
     DialogMessageButton result;
 
-    const char* screen_header = "Unleashed Firmware\n";
+    const char* screen_header = "Ghost Firmware\n";
 
-    const char* screen_text = "Play with caution.\n"
-                              "Not for illegal use!";
+    const char* screen_text = "Proceed with caution.\n"
+                              "TX/RX Unrestricted.\n"
+                              "For educational use only";
 
     dialog_message_set_header(message, screen_header, 0, 0, AlignLeft, AlignTop);
     dialog_message_set_text(message, screen_text, 0, 26, AlignLeft, AlignTop);
@@ -78,7 +79,7 @@ static DialogMessageButton unleashed_info_screen2(DialogsApp* dialogs, DialogMes
 
     const char* screen_text = "Custom plugins included\n"
                               "For updates & info visit\n"
-                              "github.com/DarkFlippers";
+                              "github.com/TensorHex";
 
     dialog_message_set_text(message, screen_text, 0, 0, AlignLeft, AlignTop);
     result = dialog_message_show(dialogs, message);
