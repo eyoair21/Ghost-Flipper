@@ -77,8 +77,7 @@ static DialogMessageButton unleashed_info_screen(DialogsApp* dialogs, DialogMess
 static DialogMessageButton unleashed_info_screen2(DialogsApp* dialogs, DialogMessage* message) {
     DialogMessageButton result;
 
-    const char* screen_text = "Custom plugins included\n"
-                              "For updates & info visit\n"
+    const char* screen_text = "For updates & info visit\n"
                               "github.com/TensorHex";
 
     dialog_message_set_text(message, screen_text, 0, 0, AlignLeft, AlignTop);
